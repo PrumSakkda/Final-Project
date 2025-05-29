@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreCambodia - Your Travel Companion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <span class="font-semibold text-gray-500 text-2xl">Explore<span
+                                class="text-blue-500">Cambodia</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="#"
+                        class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Destinations</a>
+                    <a href="https://asset.cambodia.gov.kh/tourism/2025/01/CAM122024.pdf" target="_blank"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Statistics</a>
+                    <a href="contactUS.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="bg-gray-50 font-sans">
+        <section class="relative bg-cover bg-center h-96"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Img/Beaches/beach-bg-maxsize.jpg');">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Discover Cambodia</h1>
+                <p class="text-xl md:text-2xl text-white mb-8">The Kingdom of Wonder</p>
+            </div>
+        </section>
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Cambodia</h2>
+                    <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Cambodia, a country of rich history, vibrant culture, and
+                        breathtaking landscapes, offers an unforgettable travel experience. From the majestic temples of
+                        Angkor to the pristine beaches of Sihanoukville, Cambodia is a destination that captivates the
+                        heart
+                        of every traveler.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Ancient Temples</h3>
+                        <p class="text-gray-600">Explore the magnificent Angkor Wat, the world's largest religious
+                            monument,
+                            and other stunning temple complexes that showcase Cambodia's glorious past.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Pristine Beaches</h3>
+                        <p class="text-gray-600">Relax on the white sandy beaches of Koh Rong and other tropical islands
+                            with crystal-clear waters in the Gulf of Thailand.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <div class="text-green-600 text-4xl mb-4">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Warm Hospitality</h3>
+                        <p class="text-gray-600">Experience the genuine warmth and friendliness of the Cambodian people,
+                            known for their smiles and welcoming nature.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <nav>
+            <section id="destinations" class="py-16 bg-gray-50">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Must-Visit Destinations</h2>
+                        <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                        <p class="text-gray-600 max-w-3xl mx-auto">From ancient wonders to natural beauty, Cambodia
+                            offers
+                            diverse experiences for every type of traveler.</p>
+                    </div>
+                    <div class="grid md:grid-cols-5 lg:grid-cols-5 gap-8">
+                        <!-- Destination 1 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80"
+                                alt="Angkor Wat" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Svay Rieng</h3>
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 2 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1589320011103-48e428abcbae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                                alt="Phnom Penh" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Phnom Penh</h3>
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 3 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1566438480100-9d9b40b9d3f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Siem Reap" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Siem Reap</h3>
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 4 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1596016693804-7f3689f0b111?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Sihanoukville" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Sihanoukville</h3>
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 5 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1603852452515-2dc92bd9c6f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                                alt="Battambang" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Battambang</h3>
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 6 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 7 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 8 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 9 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 10 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 11 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 12 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 13 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 14 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 15 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 16 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 17 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 18 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 19 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 20 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 21 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 22 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 23 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 24 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+
+                        <!-- Destination 25 -->
+                        <div
+                            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1599169714855-9e5f8a9c8f5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Kratie" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2">Kratie & Mekong River</h3> -->
+                                <a href="#"
+                                    class="text-green-600 font-semibold hover:text-green-700 transition duration-300">Explore
+                                    →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+
+        <!-- Culture Section -->
+        <section id="culture" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Cambodian Culture</h2>
+                    <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                    <p class="text-gray-600 max-w-3xl mx-auto">A rich tapestry of traditions, arts, and customs that
+                        have
+                        evolved over centuries.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">The Heart of Khmer Civilization</h3>
+                        <p class="text-gray-600 mb-4">Cambodian culture has its roots in the 1st to 6th centuries,
+                            influenced by India and later by Theravada Buddhism from Sri Lanka. The golden age of the
+                            Khmer
+                            Empire (9th-15th centuries) produced the magnificent Angkor temples and established cultural
+                            traditions that continue today.</p>
+                        <p class="text-gray-600 mb-6">Traditional dance, music, and silk weaving are among the many art
+                            forms that have been preserved and are still practiced. The famous Apsara dance, depicted in
+                            Angkor's bas-reliefs, remains a living tradition.</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <div class="text-green-600 mr-2">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <span class="text-gray-700">Buddhist Temples</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-green-600 mr-2">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <span class="text-gray-700">Khmer Cuisine</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-green-600 mr-2">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <span class="text-gray-700">Traditional Music</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-green-600 mr-2">
+                                    <i class="fas fa-praying-hands"></i>
+                                </div>
+                                <span class="text-gray-700">Festivals</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="/Img/culture/KhmerNewYearMonk.jpg" alt="Cambodian Culture" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav>
+        <section class="py-16 bg-blue-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose ExploreCambodia</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-6">
+                        <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-globe text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Global Network</h3>
+                        <p class="text-gray-600">Access to exclusive deals and experiences in over 24 provinces of
+                            Cambodia.
+                        </p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-headset text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+                        <p class="text-gray-600">Our travel experts are available around the clock to assist you.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-hand-holding-usd text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Saving Money</h3>
+                        <p class="text-gray-600">We promise the best prices or we'll match the difference.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Travel Tips Section -->
+        <section id="travel-tips" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Travel Tips</h2>
+                    <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Essential information to help you plan your Cambodian
+                        adventure.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Visa Requirements</h3>
+                        <p class="text-gray-600">Most visitors need a visa to enter Cambodia. Tourist visas can be
+                            obtained
+                            on arrival or online through the e-Visa system. Ensure your passport is valid for at least 6
+                            months beyond your planned departure date.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Currency</h3>
+                        <p class="text-gray-600">The official currency is the Cambodian Riel (KHR), but US dollars are
+                            widely accepted. Small transactions are often conducted in Riel. ATMs are available in
+                            cities
+                            and major tourist areas.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Language</h3>
+                        <p class="text-gray-600">Khmer is the official language. English is commonly spoken in tourist
+                            areas. Learning a few basic Khmer phrases like "Sous-dey" (Hello) and "Or-kun" (Thank you)
+                            will
+                            be appreciated.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Best Time to Visit</h3>
+                        <p class="text-gray-600">The cool season (November-February) is ideal with pleasant
+                            temperatures.
+                            Hot season (March-May) can be very warm. Rainy season (June-October) brings lush landscapes
+                            but
+                            occasional downpours.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Dress Code</h3>
+                        <p class="text-gray-600">Light, breathable clothing is recommended. When visiting temples, cover
+                            shoulders and knees as a sign of respect. Comfortable walking shoes are essential for temple
+                            exploration.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <div class="text-green-600 text-3xl mb-4">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Etiquette</h3>
+                        <p class="text-gray-600">Cambodians greet with a "sampeah" (palms together in prayer-like
+                            gesture).
+                            Avoid touching people's heads or pointing feet at people or sacred objects. Remove shoes
+                            when
+                            entering homes and some shops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="py-16 bg-green-700 text-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Traveler Experiences</h2>
+                    <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+                    <p class="max-w-3xl mx-auto">Hear what visitors say about their Cambodian adventures</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-green-800 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">Sarah Johnson</h4>
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Watching the sunrise over Angkor Wat was a spiritual experience I'll never forget. The
+                            temples
+                            exceeded all my expectations with their grandeur and intricate details."</p>
+                    </div>
+                    <div class="bg-green-800 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">Michael Chen</h4>
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"The beaches in Koh Rong are paradise! Crystal clear water, white sand, and barely any
+                            crowds.
+                            Cambodia's islands are Southeast Asia's best-kept secret."</p>
+                    </div>
+                    <div class="bg-green-800 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">Emma Rodriguez</h4>
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"The warmth of the Cambodian people made our trip special. From tuk-tuk drivers to market
+                            vendors, everyone was so friendly and welcoming. And the food is incredible!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-blue-500 text-white">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+                <p class="mb-8">Donation our team for Supporting website and stay update new information everyday.</p>
+                <form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Your email address"
+                        class="flex-grow px-4 py-3 rounded-full text-gray-800 focus:outline-none">
+                    <button type="submit"
+                        class="bg-white text-blue-500 font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300">Donation</button>
+                </form>
+            </div>
+        </section>
+    </nav>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">ExploreCambodia</h3>
+                    <p class="text-gray-400">Making travel dreams come true since 1999. We're dedicated to providing
+                        unforgettable experiences around the globe.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Destinations</a>
+                        </li>
+                        <li><a href="https://asset.cambodia.gov.kh/tourism/2025/01/CAM122024.pdf"
+                                class="text-gray-400 hover:text-white transition duration-300">Statistics</a></li>
+
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> St 562,
+                            Phnom Penh 12151</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@explorecambodia.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-xl"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-xl"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-xl"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-xl"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ExploreCambodia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS for mobile menu -->
+    <script>
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
